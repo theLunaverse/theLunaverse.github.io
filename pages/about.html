@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NASA - About us</title>
+    <link rel="stylesheet" href="../stylesheets/styles.css">
+    <!-- Add Font Awesome for menu icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" sizes="16x16" type="image/png" href="https://www.nasa.gov/wp-content/plugins/nasa-hds-core-setup/assets/favicons/favicon-16x16.png" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="../index.html"><img src="../assets/nasa-logo.png" alt="NASA Logo" title="NASA"></a>
+        </div>
+        <div class="nav-toggle" id="navToggle">
+            ☰
+        </div>
+        <ul class="nav-links">
+            <li><a href="../index.html">News</a></li>
+            <li><a href="about.html" class="active">About us</a></li>
+            <li><a href="missions.html">Missions</a></li>
+            <li><a href="apod.html">APOD</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+        </ul>
+    </nav>
+    <div id="container">
+        <section class="about-nasa">
+            <div class="video-background">
+                <video autoplay muted playsinline poster="assets/planet-poster.png">
+                    <source src="../assets/planet-bg.mp4" type="video/mp4">
+                </video>
+            </div>
+            <h1>About NASA</h1>
+            <p>NASA explores the unknown in air and space, innovates for the benefit of humanity, and inspires the world through discovery. For more than 65 years, NASA has made the seemingly impossible, possible. At its 20 centers and facilities across the country and with U.S. commercial companies and international partners, NASA leads studying Earth science, including climate, our Sun, solar system, and the larger universe. We conduct cutting-edge research to advance technology and aeronautics. We operate the world’s leading space laboratory, the International Space Station, and will establish a sustainable and strong exploration presence on the Moon this decade through the Artemis campaign.</p>
+            <a href="#timeline" class="explore-btn">Explore the timeline</a>
+        </section>
+        <section class="timeline-section" id="timeline">
+            <h2 class="section-title">Our Journey Through Time</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-year">1958</div>
+                    <div class="timeline-content">
+                        <img class="timeline-img" src="../assets/nasa-founding.webp">
+                        <h3>NASA Founded</h3>
+                        <p>NASA was created by the National Aeronautics and Space Act on July 29, 1958.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">1969</div>
+                    <div class="timeline-content">
+                        <img class="timeline-img" src="../assets/moon-landing.jpg">
+                        <h3>Apollo 11 Moon Landing</h3>
+                        <p>Neil Armstrong becomes the first human to set foot on the Moon.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">1981</div>
+                    <div class="timeline-content">
+                        <img class="timeline-img" src="../assets/space-shuttle.webp">
+                        <h3>Space Shuttle Era Begins</h3>
+                        <p>The first space shuttle mission, STS-1, launches aboard Columbia.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">1990</div>
+                    <div class="timeline-content">
+                        <img class="timeline-img" src="../assets/hubble-space-telescope.webp">
+                        <h3>Hubble Space Telescope</h3>
+                        <p>Launch of the most significant advancement in astronomy since Galileo's telescope.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2012</div>
+                    <div class="timeline-content">
+                        <img class="timeline-img" src="../assets/curiosity-rover.jpg">
+                        <h3>Curiosity Rover Lands on Mars</h3>
+                        <p>NASA's rover begins its exploration of the Red Planet.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="stats-section">
+            <h2 class="section-title">At a Glance</h2>
+            <div class="stats-container">
+                <div class="stat-item">
+                    <i class="fas fa-users"></i>
+                    <div class="stat-number" data-count="18000">0</div>
+                    <div class="stat-text">Employees</div>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-rocket"></i>
+                    <div class="stat-number" data-count="80">0</div>
+                    <div class="stat-text">Active Missions</div>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-building"></i>
+                    <div class="stat-number" data-count="10">0</div>
+                    <div class="stat-text">Centers Across USA</div>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-certificate"></i>
+                    <div class="stat-number" data-count="2602">0</div>
+                    <div class="stat-text">Patents Held</div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>&copy; 2025 NASA Website (Unofficial). Created for educational purposes.</p>
+        </footer>
+    </div>
+    <script src="../scripts/script.js"></script>
+</body>
+</html>

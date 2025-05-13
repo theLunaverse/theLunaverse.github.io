@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NASA</title>
+    <link rel="stylesheet" href="../stylesheets/styles.css">
+    <link rel="icon" sizes="16x16" type="image/png" href="https://www.nasa.gov/wp-content/plugins/nasa-hds-core-setup/assets/favicons/favicon-16x16.png" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="../index.html"><img src="../assets/nasa-logo.png" alt="NASA Logo" title="NASA"></a>
+        </div>
+        <div class="nav-toggle" id="navToggle">
+            ☰
+        </div>
+        <ul class="nav-links">
+            <li><a href="../index.html">News</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="missions.html">Missions</a></li>
+            <li><a href="apod.html" class="active">APOD</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+        </ul>
+    </nav>
+    <header>
+        <div class="header-content">
+            <h1>Astronomy Picture of the Day</h1>
+        </div>
+    </header>
+    <main>
+        <section class="date-selector">
+            <div class="date-control">
+                <label for="apod-date">Select Date: </label>
+                <input type="date" id="apod-date">
+                <button class="view-date-btn" id="view-date-btn">View</button>
+            </div>
+            <button class="random-btn" id="random-btn">Random Date</button>
+        </section>
+        
+        <section class="apod-container" id="apod-container">
+            <div class="loading" id="loading">
+                <div class="spinner"></div>
+                <p>Loading today's astronomy image...</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 NASA Website (Unofficial). Created for educational purposes.</p>
+    </footer>
+    <script src="../scripts/apod.js"></script>
+</body>
+</html>

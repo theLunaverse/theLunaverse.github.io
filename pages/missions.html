@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NASA</title>
+    <link rel="stylesheet" href="../stylesheets/style.css">
+    <link rel="icon" sizes="16x16" type="image/png" href="https://www.nasa.gov/wp-content/plugins/nasa-hds-core-setup/assets/favicons/favicon-16x16.png" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="../index.html"><img src="../assets/nasa-logo.png" alt="NASA Logo" title="NASA"></a>
+        </div>
+        <div class="nav-toggle" id="navToggle">
+            ☰
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">News</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="missions.html" class="active">Missions</a></li>
+            <li><a href="apod.html">APOD</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+        </ul>
+    </nav>
+    <header>
+        <div class="header-content">
+            <h1>OUR MISSIONS</h1>
+        </div>
+    </header>
+    <div class="mission-selector">
+        <div class="mission-buttons">
+            <button class="mission-button active" data-mission="dawn">
+                Dawn
+            </button>
+            <button class="mission-button" data-mission="messenger">
+                Messenger
+            </button>
+            <button class="mission-button" data-mission="cassini">
+                Cassini
+            </button>
+        </div>
+    </div>
+
+    <main class="mission-container">
+        <!-- DAWN MISSION SECTION -->
+        <section class="mission-section active" id="dawn-section">
+            <div class="mission-background">
+                <video muted poster="assets/dawn-poster.png">
+                    <source src="../assets/dawn.mp4" type="video/mp4">
+                </video>
+            </div>
+            
+            <div class="mission-content">
+                <div class="mission-header">
+                    <h2>Dawn <span class="mission-duration">11 Years in Space</span></h2>
+                </div>
+                
+                <div class="statistics-container">
+                    <div class="statistic-item top-left">
+                        <div class="statistic-number">51,385</div>
+                        <div class="statistic-label">HOURS OF<br>ION ENGINE THRUSTING</div>
+                    </div>
+                    
+                    <div class="statistic-item top-right">
+                        <div class="statistic-number">100,000</div>
+                        <div class="statistic-label">IMAGES<br>TAKEN</div>
+                    </div>
+                    
+                    <div class="statistic-item middle-left">
+                        <div class="statistic-number">172</div>
+                        <div class="statistic-label">GB SCIENCE DATA<br>COLLECTED</div>
+                    </div>
+                    
+                    <div class="statistic-item middle-right">
+                        <div class="statistic-number">4.3+</div>
+                        <div class="statistic-label">BILLION MILES TRAVELED<br>SINCE LAUNCH</div>
+                    </div>
+                    
+                    <div class="statistic-item bottom-left">
+                        <div class="statistic-number">3,052</div>
+                        <div class="statistic-label">ORBITS AROUND<br>Vesta and Ceres</div>
+                    </div>
+                    
+                    <div class="statistic-item bottom-right">
+                        <div class="statistic-number">367+</div>
+                        <div class="statistic-label">MILLION MILES<br>AWAY FROM EARTH</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MESSENGER MISSION SECTION -->
+        <section class="mission-section" id="messenger-section">
+            <div class="mission-background">
+                <video muted>
+                    <source src="../assets/messenger.mp4" type="video/mp4">
+                </video>
+            </div>
+            
+            <div class="mission-content">
+                <div class="mission-header">
+                    <h2>Messenger <span class="mission-duration">10 Years in Space</span></h2>
+                </div>
+                
+                <div class="statistics-container">
+                    <div class="statistic-item top-left">
+                        <div class="statistic-number">8</div>
+                        <div class="statistic-label">BILLION<br>MILES TRAVELED</div>
+                    </div>
+                    
+                    <div class="statistic-item top-right">
+                        <div class="statistic-number">255,858</div>
+                        <div class="statistic-label">IMAGES<br>RETURNED</div>
+                    </div>
+                    
+                    <div class="statistic-item middle-left">
+                        <div class="statistic-number">91,730</div>
+                        <div class="statistic-label">MPH<br>AVERAGE SPEED</div>
+                    </div>
+                    
+                    <div class="statistic-item middle-right">
+                        <div class="statistic-number">10</div>
+                        <div class="statistic-label">TERABYTES OF<br>SCIENCE DATA RELEASED</div>
+                    </div>
+                    
+                    <div class="statistic-item bottom-left">
+                        <div class="statistic-number">3,308</div>
+                        <div class="statistic-label">ORBITS OF<br>MERCURY COMPLETED</div>
+                    </div>
+                    
+                    <div class="statistic-item bottom-right">
+                        <div class="statistic-number">29</div>
+                        <div class="statistic-label">TRIPS<br>AROUND THE SUN</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CASSINI MISSION SECTION -->
+        <section class="mission-section" id="cassini-section">
+            <div class="mission-background">
+                <video muted>
+                    <source src="../assets/cassini.mp4" type="video/mp4">
+                </video>
+            </div>
+            
+            <div class="mission-content">
+                <div class="mission-header">
+                    <h2>Cassini <span class="mission-duration">12 Years at Saturn</span></h2>
+                </div>
+                
+                <div class="statistics-container">
+                    <div class="statistic-item top-left">
+                        <div class="statistic-number">2.4</div>
+                        <div class="statistic-label">MILLION COMMANDS<br>EXECUTED</div>
+                    </div>
+                    
+                    <div class="statistic-item top-right">
+                        <div class="statistic-number">2.2</div>
+                        <div class="statistic-label">BILLION MILES<br>TRAVELED</div>
+                    </div>
+                    
+                    <div class="statistic-item middle-left">
+                        <div class="statistic-number">599</div>
+                        <div class="statistic-label">GB SCIENCE DATA<br>COLLECTED</div>
+                    </div>
+                    
+                    <div class="statistic-item middle-right">
+                        <div class="statistic-number">3,616</div>
+                        <div class="statistic-label">SCIENCE PAPERS<br>PUBLISHED</div>
+                    </div>
+                    
+                    <div class="statistic-item bottom-left">
+                        <div class="statistic-number">10</div>
+                        <div class="statistic-label">MOONS<br>DISCOVERED</div>
+                    </div>
+                    
+                    <div class="statistic-item bottom-right">
+                        <div class="statistic-number">243</div>
+                        <div class="statistic-label">ORBITS<br>COMPLETED</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 NASA Website (Unofficial). Created for educational purposes.</p>
+    </footer>
+    <script src="../scripts/scripts.js"></script>
+</body>
+</html>

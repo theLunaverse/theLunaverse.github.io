@@ -1,28 +1,131 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NASA</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="icon" sizes="16x16" type="image/png" href="https://www.nasa.gov/wp-content/plugins/nasa-hds-core-setup/assets/favicons/favicon-16x16.png" />
 </head>
 <body>
-    <div class="page-container">
-        <nav class="navbar">
-            <div class="logo">
-                <a href="index.html"></a><img src="assets/nasa-logo.png" alt="NASA Logo" title="NASA"></a>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="assets/nasa-logo.png" alt="NASA Logo" title="NASA"></a>
+        </div>
+        <div class="nav-toggle" id="navToggle">
+            ☰
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">News</a></li>
+            <li><a href="pages/about.html">About us</a></li>
+            <li><a href="pages/missions.html">Missions</a></li>
+            <li><a href="pages/apod.html">APOD</a></li>
+            <li><a href="pages/contact.html">Contact us</a></li>
+        </ul>
+    </nav>
+    <div id="container">
+        <div class="headline-container">
+            <h1 class="main-headline">CAPTURING THE SKY</h1>
+            <p class="headline-description">
+                Launched on March 11, the SPHEREx space observatory has spent weeks undergoing checkouts and calibrations to ensure it is working as it should. Now it's mapping the entire sky to chart the positions of hundreds of millions of galaxies in 3D to answer some big questions about the universe.
+            </p>
+            <a href="https://www.nasa.gov/missions/spherex/nasas-spherex-space-telescope-begins-capturing-entire-sky/" 
+                target="_blank"
+                class="news-button">
+                Read Full Article
+            </a>            
+        </div>
+        <div class="video-container">
+            <video id="moonVideo" muted loop playsinline preload="auto" poster="assets/moon_poster.png">
+                <source src="assets/moon phases.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="scroll-indicator">
+            <span class="scroll-text">Scroll Down <br>For More News</span>
+            <div class="scroll-arrow">
+                <div class="scroll-arrow">&darr;</div>
             </div>
-            <div class="nav-toggle" id="navToggle">
+        </div>
+    </div>
+    <!-- flashcards -->
+    <section class="flashcards-section">
+        <h1 class="fade-up delay-1">More News: </h1>
+        <div class="carousel-container fade-up delay-2">
+            <button class="carousel-button prev">❮</button>
+            <div class="carousel-track-container">
+                <div class="carousel-track">
+                    <!-- Card 1 -->
+                    <div class="flashcard">
+                        <div class="flashcard-front" style="background-image: url('https://images-assets.nasa.gov/image/KSC-20250424-PH-KLS01_0052/KSC-20250424-PH-KLS01_0052~large.jpg?w=768&h=512&fit=crop&crop=faces%2Cfocalpoint')">
+                            <h3>NASA Harvests Lettuce for Space Station Study</h3>
+                            <a href="https://www.nasa.gov/image-article/nasa-harvests-lettuce-for-space-station-study/" class="card-button" target="_blank">Learn More</a>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="flashcard">
+                        <div class="flashcard-front" style="background-image: url('https://www.nasa.gov/wp-content/uploads/2025/04/1-pia26595-new-junocam-2500.jpg?resize=1024,540')">
+                            <h3>NASA's Juno Mission Gets Under Jupiter's and Io's Surface</h3>
+                            <a href="https://www.nasa.gov/missions/juno/nasas-juno-mission-gets-under-jupiters-and-ios-surface/" class="card-button" target="_blank">Learn More</a>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="flashcard">
+                        <div class="flashcard-front" style="background-image: url('https://www.nasa.gov/wp-content/uploads/2024/08/meatball-w-black-background.webp?resize=1024,566')">
+                            <h3>President Trump's FY26 Budget Revitalizes Human Space Exploration</h3>
+                            <a href="https://www.nasa.gov/news-release/president-trumps-fy26-budget-revitalizes-human-space-exploration/" class="card-button" target="_blank">Learn More</a>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="flashcard">
+                        <div class="flashcard-front" style="background-image: url('https://assets.science.nasa.gov/dynamicimage/assets/science/psd/solar-system/skywatching/2025/may/moon_saturn_venus_may_23_2025_sky_chart.png?w=768&h=432&fit=crop&crop=faces%2Cfocalpoint')">
+                            <h3>What's Up: May 2025 Skywatching Tips from NASA</h3>
+                            <a href="https://science.nasa.gov/solar-system/skywatching/whats-up-may-2025-skywatching-tips-from-nasa/" class="card-button" target="_blank">Learn More</a>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="flashcard">
+                        <div class="flashcard-front" style="background-image: url('https://assets.science.nasa.gov/dynamicimage/assets/science/missions/hubble/galaxies/spiral/Hubble_M77_2025_potw2515a.jpg?w=768&h=835&fit=crop&crop=faces%2Cfocalpoint')">
+                            <h3>Hubble Spots a Squid in the Whale</h3>
+                            <a href="https://www.nasa.gov/image-article/hubble-spots-a-squid-in-the-whale/" class="card-button" target="_blank">Learn More</a>
+                        </div>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="flashcard">
+                        <div class="flashcard-front" style="background-image: url('https://www.nasa.gov/wp-content/uploads/2025/04/prime-1-lunar-surface-crop.jpg?resize=1024,870')">
+                            <h3>NASA's Lunar Drill Technology Passes Tests on the Moon</h3>
+                            <a href="https://www.nasa.gov/missions/artemis/nasas-lunar-drill-technology-passes-tests-on-the-moon/" class="card-button" target="_blank">Learn More</a>
+                        </div>
+                    </div>
+
+                    <!-- Card 7 -->
+                    <div class="flashcard">
+                        <div class="flashcard-front" style="background-image: url('https://www.nasa.gov/wp-content/uploads/2025/05/bone.jpg')">
+
+                            <h3>NASA's Chandra Diagnoses Cause of Fracture in Galactic "Bone"</h3>
+                            <a href="https://www.nasa.gov/missions/chandra/nasas-chandra-diagnoses-cause-of-fracture-in-galactic-bone/" class="card-button" target="_blank">Learn More</a>
+                        </div>
+                    </div>
+
+                    <!-- Card 8 -->
+                    <div class="flashcard">
+                        <div class="flashcard-front" style="background-image: url('https://assets.science.nasa.gov/dynamicimage/assets/science/missions/hubble/galaxies/spiral/Hubble_NGC1961_potw2517a.jpg?w=600&h=566&fit=crop&crop=faces%2Cfocalpoint')">
+                            <h3>Hubble Images a Peculiar Spiral</h3>
+                            <a href="https://science.nasa.gov/missions/hubble/hubble-images-a-peculiar-spiral/" class="card-button" target="_blank">Learn More</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <ul class="nav-links">
-                <li><a href="index.html">News</a></li>
-                <li><a>About us</a></li>
-                <li><a>Missions</a></li>
-                <li><a>Planets</a></li>
-                <li><a>Contact</a></li>
-            </ul>
-        </nav>
+            <button class="carousel-button next">❯</button>
+        </div>
+    </section>
+    </div>
+    <footer>
+        <p>&copy; 2025 NASA Website (Unofficial). Created for educational purposes.</p>
+    </footer>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
