@@ -113,7 +113,7 @@ footer {
     color: rgba(255, 255, 255, 0.866);
     background-size: 200%;
     -webkit-background-clip: text;
-    max-width: 300px;
+    max-width: 400px;
     background-clip: text;
     z-index: 801;
 }
@@ -122,7 +122,7 @@ footer {
     position: absolute;
     top: 40%; 
     left: 2%;
-    max-width: 500px; /* Controls width to create multiple lines */
+    max-width: 425px; /* Controls width to create multiple lines */
     font-size: 1rem; /* Smaller than heading */
     line-height: 1.6;
     color: rgba(255, 255, 255, 0.608);
